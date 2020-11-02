@@ -18,8 +18,6 @@ struct sgrp {
 	char **sg_mem; /* Group member list */
 };
 
-void setsgent(void);
-void endsgent(void);
 struct sgrp *getsgent(void);
 struct sgrp *getsgnam(const char *__name);
 struct sgrp *sgetsgent(const char *__string);
